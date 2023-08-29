@@ -21,14 +21,6 @@ def find_duplicate_chars(s):
             in the char_count dictionary, add it with a count of 1.
             """
             char_count[char] = 1
-    
-    # duplicates = []
-    # # if s is empty
-    # if not s:
-    #     return ""
-    # for i in range(1, len(s)):
-    #     if s[i] == s[i-1]:
-    #         duplicates.append(s[i])
     return duplicates
 
 print(find_duplicate_chars("hellooworldh"))
