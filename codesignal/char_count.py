@@ -9,9 +9,8 @@ def common_char_count(str_one, str_two):
     for char in str_one:
         # char_count[char] = char_count.get(char, 0) + 1
         if char in str_two:
-            char += 1
-        # else:
-        #     char = 0
+            chars += 1
+            str_two = str_two.replace(char, "", 1)
     
     return chars
 
