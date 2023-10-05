@@ -19,4 +19,5 @@ def solution(input_array):
     
     return [team_one, team_two]
 
+# Test data
 print(solution([50, 60, 60, 45, 70]))

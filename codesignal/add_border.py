@@ -3,7 +3,7 @@ Given a rectangular matrix of characters, add a border of asterisks(*) to it.
 """
 
 def add_border_matrix(matrix):
-    rows = len(matrix)
+    # rows = len(matrix)
     cols = len(matrix[0])
     bordered_matrix = []
 
@@ -15,6 +15,7 @@ def add_border_matrix(matrix):
     bordered_matrix.append("*" * (cols + 2))
     return bordered_matrix
 
+# Test data
 print(add_border_matrix(
         ["abc",
         "ded"])

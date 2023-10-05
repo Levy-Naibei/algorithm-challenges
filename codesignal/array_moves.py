@@ -14,5 +14,6 @@ def min_moves(input_array):
             input_array[i] = input_array[i-1] + 1
     return moves
 
+# Test Data 
 print(min_moves([1, 1, 1]))
     

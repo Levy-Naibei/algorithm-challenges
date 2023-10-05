@@ -16,4 +16,5 @@ def make_array_consecutive(statues):
 
     return additional_size
 
+# Test data
 print(make_array_consecutive([6, 2, 3, 8]))
