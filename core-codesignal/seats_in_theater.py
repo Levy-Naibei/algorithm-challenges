@@ -16,3 +16,5 @@ def seats_in_theater(nCols, nRows, col, row):
     total_people = people_in_your_row * people_behind_you
     
     return total_people
+
+print(seats_in_theater(7, 6, 2, 3))
