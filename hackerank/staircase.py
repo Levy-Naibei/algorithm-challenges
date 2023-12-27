@@ -11,7 +11,8 @@ Write a program that prints a staircase of size n.
 """
 
 def stair_case(num_stairs):
-    for stairs in range(1, num_stairs + 1):
-        print(" " * (num_stairs - stairs) + "#" * stairs)
-
-print(stair_case(5))
+    for i in range(1, num_stairs + 1):
+        spaces = " " * (num_stairs - i)
+        stairs = "#" * i
+        print(spaces + stairs)
+stair_case(5)
