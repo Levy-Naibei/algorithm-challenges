@@ -3,7 +3,6 @@ Implement the Quick Sort algorithm to sort an array of integers in ascending ord
 Write a function quick_sort(arr) that takes an array of integers as input and returns the sorted array.
 """
 
-
 def quick_sort(arr):
     # If the array is empty or has only one element, it is already sorted.
     if len(arr) <= 1:
@@ -60,7 +59,7 @@ print(quick_sort([3, 6, 8, 10, 1, 2, 1]))
 """
 In the iterative version of quicksort, we use a stack to keep track of the 
 sub-array ranges (defined by their starting and ending indices) that need to be sorted.
- Each element in the stack is a tuple (low, high) where:
+Each element in the stack is a tuple (low, high) where:
 low is the starting index of the sub-array.
 high is the ending index of the sub-array.
 
@@ -74,4 +73,15 @@ First Iteration:
 
 low, high = stack.pop() unpacks the tuple (0, 6), so low = 0 and high = 6.
 We then call partition(arr, low, high) to partition this range of the array.
+
+EDGE CASES:
+if low >= high: section has one 1 element; already sorted
+if low > high: no element to sort
+
+if solved recursively in the quick_sort function:
+if low < high:
+    pi = partition(arr, low, high)
+    quick_sort(arr, low, pi-1)
+    quick_sort(arr, pi+1, high)
+return arr
 """
