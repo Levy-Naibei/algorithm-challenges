@@ -18,6 +18,7 @@ const maxSequenceSum = (listOfItems, sequenceLength) => {
   let maxSum = windowSum;
 
   //slide the window and update the sum
+  // compute the sum of k elements ending with a[i]
   for (let i = sequenceLength; i < listOfItems.length; i++) {
     windowSum += listOfItems[i] - listOfItems[i - sequenceLength];
     maxSum = Math.max(maxSum, windowSum);
@@ -28,3 +29,4 @@ const maxSequenceSum = (listOfItems, sequenceLength) => {
 
 console.log(maxSequenceSum([1,2,6,2,4,1], 3))
 console.log(maxSequenceSum([1,4,2,10,2,3,1,0,20], 4))
+console.log(maxSequenceSum([1,2,3,-10,-3], 4))
